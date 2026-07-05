@@ -1,29 +1,39 @@
 site_name: Mi KB - Cursos Tecnología
 site_description: Knowledge Base - SEO, Cursos, Apuntes
 site_author: Tu Nombre
-site_url: https://github.com/tu-usuario/mi-kb-cursos
 
 theme:
   name: material
   language: es
   features:
+    - content.code.copy
     - search.suggest
     - search.highlight
     - navigation.tabs
     - navigation.sections
     - toc.follow
-  palette:
-    - scheme: default
-      toggle:
-        icon: material/lightbulb-outline
-        name: Modo oscuro
 
 plugins:
   - search:
       lang: es
+  - awesome-pages
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: date
+  - minify:
+      minify_html: true
+  - mermaid2
+  
 
 nav:
   - Inicio: index.md
   - SEO:
-      - Conceptos Base: seo/00-conceptos-base.md
-      - On-Page: seo/01-on-page.md
+      - Conceptos Base: SEO/00-conceptos-base.md
+      - On-Page: SEO/01-on-page.md
+      - ejemplo diagrama: SEO/ejemplo-diagrama.md
+
+extra_javascript:
+  - js/pdf-export.js
+
+extra_css:
+  - css/custom.css

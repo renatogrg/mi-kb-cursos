@@ -1,0 +1,9 @@
+/* Ocultar footer completamente */
+footer {
+  display: none !important;
+}
+
+/* Opcional: ajusta el padding si queda espacio */
+.md-content {
+  margin-bottom: 0;
+}
