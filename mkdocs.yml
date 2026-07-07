@@ -14,11 +14,7 @@ theme:
     - navigation.tabs.sticky
     - navigation.sections
     - toc.follow
-  
-  
-
     
-  
 
 plugins:
   - search:
@@ -32,11 +28,16 @@ plugins:
   - mermaid2
   
 
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.admonition
+
 nav:
   - Inicio: index.md
   - SEO:
       - Conceptos Básicos SEO: SEO/01-conceptos_basicos_seo.md
-      - Indexación y Rastreo: SEO/02-indexacion_rastreo.md
+      - Indexación y Rastreo: SEO/02-indexacion_y_rastreo.md
       - ejemplo diagrama: SEO/ejemplo-diagrama.md
 
 
@@ -54,6 +55,7 @@ nav:
         - Plantilla Comparativa/Tabla: GUIA/05-plantilla_comparativa_tabla.md
         - Plantilla Concepto + Checklist: GUIA/06-plantilla_concepto_checklist.md
         - Sintesis de plantillas: GUIA/plantilla_resumen_sintesis.md
+        - cornell: GUIA/cornell.md
       - Otros:
         - Referencia Rápida: GUIA/08-REFERENCIA_RAPIDA.md
         - Guía Nuevo Proyecto: GUIA/09-GUIA_PROYECTO_NUEVO.md

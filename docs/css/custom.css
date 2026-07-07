@@ -62,3 +62,39 @@ footer {
 .md-typeset {
     font-size: 0.65rem;
 }
+
+/* Mas espacio para apuntes en dos columnas */
+.md-main__inner {
+    max-width: 96%;
+}
+
+.md-content {
+    max-width: none;
+}
+
+.md-sidebar--primary {
+    width: 10rem;
+}
+
+.md-sidebar--secondary {
+    width: 9rem;
+}
+
+.md-typeset .grid.cards {
+    grid-template-columns: minmax(0, 4fr) minmax(12rem, 1fr);
+}
+
+.md-typeset .grid.cards > ul {
+    grid-template-columns: minmax(0, 4fr) minmax(12rem, 1fr) !important;
+}
+
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid.cards > ol > li {
+    margin: 0;
+}
+
+@media screen and (max-width: 76.1875em) {
+    .md-main__inner {
+        max-width: none;
+    }
+}
