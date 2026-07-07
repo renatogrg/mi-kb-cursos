@@ -35,8 +35,8 @@ plugins:
 nav:
   - Inicio: index.md
   - SEO:
-      - Conceptos Base: SEO/01-conceptos_basicos_seo.md
-      - On-Page: SEO/01-on-page.md
+      - Conceptos Básicos SEO: SEO/01-conceptos_basicos_seo.md
+      - Indexación y Rastreo: SEO/02-indexacion_rastreo.md
       - ejemplo diagrama: SEO/ejemplo-diagrama.md
 
 
