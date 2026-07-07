@@ -4,14 +4,21 @@ site_author: Tu Nombre
 
 theme:
   name: material
+  custom_dir: overrides
   language: es
   features:
     - content.code.copy
     - search.suggest
     - search.highlight
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
     - toc.follow
+  
+  
+
+    
+  
 
 plugins:
   - search:
@@ -31,9 +38,27 @@ nav:
       - Conceptos Base: SEO/00-conceptos-base.md
       - On-Page: SEO/01-on-page.md
       - ejemplo diagrama: SEO/ejemplo-diagrama.md
+      
+  - GUIA: 
+      
+      - Tips de Redacción: GUIA/tips.md
+      - Plantilla Apuntes: GUIA/plantilla_apuntes.md
+      - Plantilla Checklist: GUIA/plantilla_checklist.md
+      - Plantilla Diagrama Mermaid: GUIA/plantilla_diagrama_mermaid.md
+      - Plantilla Comparativa/Tabla: GUIA/plantilla_comparativa_tabla.md
+      - Plantilla Concepto + Checklist: GUIA/plantilla_concepto_checklist.md
+      - Sintesis de plantillas: GUIA/plantilla_resumen_sintesis.md
+      
+
+      - Referencia Rápida: GUIA/REFERENCIA_RAPIDA.md
+      - Guía Nuevo Proyecto: GUIA/GUIA_PROYECTO_NUEVO.md
+      
+
+      
 
 extra_javascript:
   - js/pdf-export.js
 
 extra_css:
   - css/custom.css
+

@@ -1,9 +1,58 @@
-/* Ocultar footer completamente */
+
+
+/* Ocultar footer */
 footer {
-  display: none !important;
+  display: none ;
 }
 
-/* Opcional: ajusta el padding si queda espacio */
+/* Padding ajustado */
 .md-content {
   margin-bottom: 0;
+}
+
+
+.md-tabs {
+    display: block !important;
+    visibility: visible !important;
+}
+
+/* Oculta el título dinámico */
+.md-header__topic[data-md-component="header-topic"] {
+    display: none !important;
+}
+
+/* Fuerza mostrar el título del proyecto */
+.md-header__topic:first-child {
+    display: block !important;
+}
+
+/* Evita que Material cambie el título al hacer scroll */
+.md-header__title .md-header__topic {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.md-header__title .md-header__topic + .md-header__topic {
+    display: none !important;
+}
+
+
+
+
+
+/* Carpetas */
+.md-nav__item--section > .md-nav__link {
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+
+/* Páginas dentro del índice */
+.md-sidebar--primary .md-nav__item:not(.md-nav__item--section) > .md-nav__link {
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+/* Mantener normales las secciones principales */
+.md-sidebar--primary .md-nav__item--section > .md-nav__link {
+    font-size: 0.7rem;
 }
