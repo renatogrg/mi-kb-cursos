@@ -35,23 +35,28 @@ plugins:
 nav:
   - Inicio: index.md
   - SEO:
-      - Conceptos Base: SEO/00-conceptos-base.md
+      - Conceptos Base: SEO/01-conceptos_basicos_seo.md
       - On-Page: SEO/01-on-page.md
       - ejemplo diagrama: SEO/ejemplo-diagrama.md
+
+
+
+
       
   - GUIA: 
       
-      - Tips de Redacción: GUIA/tips.md
-      - Plantilla Apuntes: GUIA/plantilla_apuntes.md
-      - Plantilla Checklist: GUIA/plantilla_checklist.md
-      - Plantilla Diagrama Mermaid: GUIA/plantilla_diagrama_mermaid.md
-      - Plantilla Comparativa/Tabla: GUIA/plantilla_comparativa_tabla.md
-      - Plantilla Concepto + Checklist: GUIA/plantilla_concepto_checklist.md
-      - Sintesis de plantillas: GUIA/plantilla_resumen_sintesis.md
+      - Tips de Redacción: GUIA/01-tips.md
       
-
-      - Referencia Rápida: GUIA/REFERENCIA_RAPIDA.md
-      - Guía Nuevo Proyecto: GUIA/GUIA_PROYECTO_NUEVO.md
+      - Plantillas:      
+        - Plantilla Apuntes: GUIA/02-plantilla_apuntes.md
+        - Plantilla Checklist: GUIA/03-plantilla_checklist.md
+        - Plantilla Diagrama Mermaid: GUIA/04-plantilla_diagrama_mermaid.md
+        - Plantilla Comparativa/Tabla: GUIA/05-plantilla_comparativa_tabla.md
+        - Plantilla Concepto + Checklist: GUIA/06-plantilla_concepto_checklist.md
+        - Sintesis de plantillas: GUIA/plantilla_resumen_sintesis.md
+      - Otros:
+        - Referencia Rápida: GUIA/08-REFERENCIA_RAPIDA.md
+        - Guía Nuevo Proyecto: GUIA/09-GUIA_PROYECTO_NUEVO.md
       
 
       
