@@ -93,8 +93,36 @@ footer {
     margin: 0;
 }
 
+.cornell-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 4fr) minmax(12rem, 1fr);
+    gap: 1rem;
+    align-items: start;
+}
+
+.cornell-content,
+.cornell-notes {
+    border: 0.05rem solid var(--md-default-fg-color--lightest);
+    border-radius: 0.35rem;
+    padding: 0.8rem;
+    background: var(--md-default-bg-color);
+}
+
+.cornell-notes {
+    background: var(--md-code-bg-color);
+}
+
+.cornell-content > :first-child,
+.cornell-notes > :first-child {
+    margin-top: 0;
+}
+
 @media screen and (max-width: 76.1875em) {
     .md-main__inner {
         max-width: none;
+    }
+
+    .cornell-layout {
+        grid-template-columns: 1fr;
     }
 }

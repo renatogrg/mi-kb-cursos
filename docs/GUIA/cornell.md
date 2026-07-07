@@ -1,23 +1,39 @@
-# Plantilla Cornell con Material grids
+# Plantilla Cornell sin sangría manual
 
-<div class="grid cards" markdown>
+<div class="cornell-layout" markdown="1">
 
--   **Contenido**
 
-    ## Tema principal
 
-    Escribe aquí el contenido de la clase, lectura o tema.
+<div class="cornell-content" markdown="1">
 
-    ## Subtema
+**Contenido**
 
-    - Idea importante
-    - Dato, definición o procedimiento
-    - Ejemplo breve
+## Tema principal
 
--   **Anotaciones**
+Escribe aquí el contenido de la clase, lectura o tema.
 
-    - Palabras clave
-    - Preguntas para repasar
-    - Conexiones con otros temas
+## Subtema
+
+- Idea importante
+- Dato, definición o procedimiento
+- Ejemplo breve
+
+</div>
+
+
+
+<div class="cornell-notes" markdown="1">
+
+**Anotaciones**
+
+- Palabras clave
+- Preguntas para repasar
+- Conexiones con otros temas
+</div>
+
+
+
+
+
 
 </div>
