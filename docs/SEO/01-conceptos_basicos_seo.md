@@ -5,7 +5,7 @@
 
 **Contenido**
 
-## Qué es SEO
+## Qué es SEOoooo
 
 Posicionar un sitio en Google sin pagar publicidad.
 
