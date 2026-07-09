@@ -1,0 +1,84 @@
+crear deploy.yml
+
+Repositorio
+└── .github
+    └── workflows
+        └── deploy.yml
+
+```bash
+mkdir .github
+mkdir .github\workflows
+New-Item .github\workflows\deploy.yml -ItemType File
+```
+
+CONTENIDO DE DEPLOY.WMK
+
+
+```bash
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          pip install mkdocs
+          pip install mkdocs-material
+          pip install mkdocs-awesome-pages-plugin
+          pip install mkdocs-git-revision-date-localized-plugin
+          pip install mkdocs-minify-plugin
+          pip install mkdocs-mermaid2-plugin
+
+      - name: Build
+        run: mkdocs build
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - id: deployment
+        uses: actions/deploy-pages@v4
+```
+
+Luego, en tu repositorio:
+
+Settings
+Pages
+En Build and deployment
+Selecciona:
+Source
+GitHub Actions
+
+No selecciones Deploy from a branch.
+
+
+
+LUEGO CON CADA PUSH SE ACTUALIZARÁ
